@@ -14,14 +14,11 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   container: {
-    display: "flex",
-    alignItems: "flex-end",
-    justifyContent: "center",
     width: "90%",
     height: 300,
     maxWidth: 1283,
     margin: "auto",
-    padding: "200px 0px",
+    padding: "100px 0px",
   },
 });
 
