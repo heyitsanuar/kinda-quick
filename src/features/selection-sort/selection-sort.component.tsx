@@ -1,8 +1,9 @@
 import * as React from "react";
 import ChartComponent from "shared/components/chart/chart.component";
+import { createArray } from "helper/array-generator";
 
 const SelectionSortComponent = () => {
-  const array = Array.from({ length: 50 }, () => Math.floor(Math.random() * 50) + 1);
+  const array = createArray();
 
   return <ChartComponent title='Selection Sort' items={array} />;
 };

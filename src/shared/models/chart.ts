@@ -1,8 +1,6 @@
-export interface ChartView {
-  items: any[];
-  title: string;
-}
+import { IBarItem } from "./bar";
 
-export interface BarView {
-  height: number;
+export interface ChartView {
+  items: IBarItem[];
+  title: string;
 }

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BarView } from "shared/models/chart";
+import { BarView } from "shared/models/bar";
 import { createUseStyles } from "react-jss";
 
 const BAR_HEIGHT_SCALE = 6;
