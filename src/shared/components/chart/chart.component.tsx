@@ -33,7 +33,7 @@ const ChartComponent: React.FC<ChartView> = (props) => {
         <h1 className={classes.title}>{title}</h1>
         <div className={classes.chart}>
           {items.map((i) => (
-            <BarComponent key={i.id} height={i.value} />
+            <BarComponent key={i.id} height={i.value} type={i.type} />
           ))}
         </div>
       </div>

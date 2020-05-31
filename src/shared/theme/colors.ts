@@ -1,3 +1,4 @@
 export const colors = {
-    blue: '#002C3E'
-}
+  dark: "#002C3E",
+  purple: "#842D72",
+};
