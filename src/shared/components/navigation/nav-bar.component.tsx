@@ -1,48 +1,18 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { createUseStyles } from "react-jss";
 import logoImg from "shared/assets/images/logo.png";
 
-const useStyles = createUseStyles({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    padding: "30px 0px",
-  },
-  nav: {
-    padding: "25px 0px",
-    "& a": {
-      color: "#1c1c1c",
-      textDecoration: "none",
-      padding: "10px 15px",
-      margin: "0px 10px",
-      transition: "all .3s ease",
-      "&.active": {
-        backgroundColor: "#1c1c1c",
-        color: "#fff",
-      },
-    },
-  },
-  logo: {
-    width: "100%",
-    textAlign: "center",
-    "& img": {
-      width: 300,
-    },
-  },
-});
+import "./nav-bar.styles.scss"
 
 const NavBarComponent = () => {
-  const classes = useStyles();
   const [activeTab, setActiveTab] = React.useState(0);
 
   return (
-    <div className={classes.root}>
-      <div className={classes.logo}>
+    <div className="nav-bar-root">
+      <div className="nav-bar-logo">
         <img src={logoImg} alt='kinda-quick' />
       </div>
-      <nav className={classes.nav}>
+      <nav className="nav-bar-navigator">
         <Link
           to='/bubble-sort'
           className={activeTab === 0 ? "active" : ""}

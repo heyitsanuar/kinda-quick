@@ -9,39 +9,22 @@ import MergeSortComponent from "features/merge-sort/merge-sort.component";
 import QuickSortComponent from "features/quick-sort/quick-sort.component";
 import RadixSortComponent from "features/radix-sort/radix-sort.component";
 
-import { createUseStyles } from "react-jss";
+import "./app.styles.scss";
 
-const useStyles = createUseStyles({
-  container: {
-    display: "flex",
-    alignItems: "flex-end",
-    justifyContent: "center",
-    width: "90%",
-    height: 300,
-    maxWidth: 1283,
-    margin: "auto",
-    padding: "200px 0px",
-  },
-});
-
-const AppRoutes = () => {
-  const classes = useStyles();
-
-  return (
-    <Router>
-      <NavBarComponent />
-      <Switch>
-        <div className={classes.container}>
-          <Route path='/bubble-sort' component={BubbleSortComponent} />
-          <Route path='/insertion-sort' component={InsertionSortComponent} />
-          <Route path='/selection-sort' component={SelectionSortComponent} />
-          <Route path='/merge-sort' component={MergeSortComponent} />
-          <Route path='/quick-sort' component={QuickSortComponent} />
-          <Route path='/radix-sort' component={RadixSortComponent} />
-        </div>
-      </Switch>
-    </Router>
-  );
-};
+const AppRoutes = () => (
+  <Router>
+    <NavBarComponent />
+    <Switch>
+      <div className="app-container">
+        <Route path='/bubble-sort' component={BubbleSortComponent} />
+        <Route path='/insertion-sort' component={InsertionSortComponent} />
+        <Route path='/selection-sort' component={SelectionSortComponent} />
+        <Route path='/merge-sort' component={MergeSortComponent} />
+        <Route path='/quick-sort' component={QuickSortComponent} />
+        <Route path='/radix-sort' component={RadixSortComponent} />
+      </div>
+    </Switch>
+  </Router>
+);
 
 export default AppRoutes;

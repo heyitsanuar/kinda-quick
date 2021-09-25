@@ -1,0 +1,18 @@
+.app {
+    &-root {
+        width: 90%;
+        max-width: 1298px;
+        margin: auto;
+    }
+
+    &-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 90%;
+        height: 300px;
+        max-width: 1283px;
+        margin: auto;
+        padding: 200px 0px;
+    }
+}

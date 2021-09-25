@@ -7,8 +7,8 @@ const ChartComponent: React.FC<ChartView> = (props) => {
 
   return (
     <React.Fragment>
-      {items.map((i: any) => (
-        <BarComponent height={i} />
+      {items.map((item: any) => (
+        <BarComponent height={item} />
       ))}
     </React.Fragment>
   );
